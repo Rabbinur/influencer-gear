@@ -229,7 +229,7 @@ a {
     color: rgba(0, 0, 0, 0.87);
 }
 
-.text .icons {
+.text .icon {
     margin-bottom: 5px;
 }
 
@@ -357,7 +357,7 @@ footer .icons {
     /* text-decoration: none; */
 }
 
-.icons i {
+footer.icons i {
     height: 40px;
     width: 40px;
     color: #343b6d;
@@ -387,3 +387,220 @@ footer .icons {
 }
 
 /* footer section css end */
+
+/* --------------------------------
+
+Media qurey css
+
+--------------------------------------*/
+
+/* Mobile device  query start*/
+@media only screen and (max-width:688px) {
+    .container {
+        width: 100%;
+    }
+
+    header {
+        display: none;
+    }
+
+    .banner {
+        width: 100%;
+        padding-bottom: 50px;
+    }
+
+    .banner-content {
+
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .banner-content .left {
+        padding: 14px 43px 52px 41px;
+    }
+
+    .banner-title {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 42px;
+        text-align: center;
+    }
+
+    .banner-subtitle {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        text-align: center
+    }
+
+    .banner-content .btn1 {
+        padding: 10px 15px 10px;
+        text-align: center;
+        align-items: center;
+        margin: 25%;
+    }
+
+    .banner .right {
+        padding: 22px 52px 14px 51px;
+    }
+
+
+    .right .circle {
+        width: 100%;
+        position: relative;
+        /* padding: 22px 52px 14px 51px; */
+    }
+
+    .right .camera {
+        width: 75%;
+        position: absolute;
+        top: 0px;
+
+
+        right: 0px;
+        padding: 51px;
+    }
+
+    /* banner query end */
+    /* logos query start */
+
+    /* logos query end */
+    .logos {
+        width: 100%;
+        padding-bottom: 35px;
+    }
+
+    .logo-content {
+        padding: 0px 32px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .logos-items {
+        margin: 10px 12px;
+    }
+
+    /* logos qurey css end */
+
+    /* gallery qurey start */
+    .gallery {
+        width: 100%;
+        padding-bottom: 30px;
+    }
+
+    .gallery-content h2 {
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    .gallery-box {
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .gallery-box .title {
+        font-weight: 700;
+        font-size: 28px;
+    }
+
+    .gallery-items img {
+        width: 100%;
+    }
+
+    .gallery-box .price {
+        font-weight: 700;
+        font-size: 24px;
+    }
+
+    .text span {
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    .text .subtitle {
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    .last {
+        padding-right: 23px;
+    }
+
+    /* gallery qurey end */
+
+    /* feature query start */
+    .feature {
+        width: 100%;
+        padding-bottom: 40px;
+
+    }
+
+    .feature-content {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 20px;
+
+    }
+
+    .feature .right {
+        padding: 20px 20px 30px 20px;
+    }
+
+    .right .feature-title {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+        padding: 0px 20px 0px 29px;
+        text-align: center;
+    }
+
+    .right .feature-subtitle {
+        font-weight: 700;
+        font-size: 16px;
+        padding: 0px 60px 0px 60px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .right .btn1 {
+        text-align: center;
+        margin-left: 30%;
+
+    }
+
+    /* feature query end */
+    .footer {
+        display: none;
+    }
+
+    /* footer query start */
+    footer {
+        width: 100%;
+    }
+
+
+
+    footer h3 {
+        font-weight: 700;
+        font-size: 16px;
+    }
+
+    footer p {
+        font-weight: 700;
+        font-size: 12px;
+    }
+
+    /* footer query end */
+
+}
+
+
+
+
+
+
+
+
+/* mobile device query end */
