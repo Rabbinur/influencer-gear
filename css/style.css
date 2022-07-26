@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 
 }
 
@@ -81,11 +82,12 @@ a {
 .banner {
     width: 100%;
     background: #FFFFFF;
+    margin-bottom: 100px;
 }
 
 .banner-content {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .banner-content .left {
@@ -96,7 +98,7 @@ a {
 
 .banner-content .right {
     flex-basis: 50%;
-    padding: 50px 132px 69px 65px;
+    /* padding: 50px 132px 69px 65px; */
 
 }
 
@@ -132,29 +134,42 @@ a {
 .right {
     position: relative;
     top: 0;
-    right: 0;
+    left: 0;
 }
 
 .right img {
     /* width: 100%; */
     /* height: auto; */
+
 }
 
 .circle {
-    position: relative;
-    width: 90%;
-    height: auto;
-    padding: 30px 33px 36px 2px;
+    /* position: relative; */
+    width: 70%;
+    /* margin: auto; */
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    /* height: auto;
+    padding: 30px 33px 36px 2px; */
 
 }
 
 .camera {
     position: absolute;
-    top: 70px;
-    right: 70px;
-    padding: 50px 132px 69px 131px;
-    width: 60%;
-    height: auto;
+    /* top: 70px; */
+    /* right: 70px; */
+    /* padding: 50px 132px 69px 131px; */
+    width: 50%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    /* height: auto; */
 }
 
 /* banner section css end */
@@ -171,14 +186,13 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0px 165px 0px;
 }
 
 .logos-items {
     margin: 0px 20px;
 }
 
-.logo img {
+.logos-items img {
     width: 100%;
     height: auto;
 
@@ -323,7 +337,7 @@ a {
 /* footer section css start */
 footer {
     width: 100%;
-    padding-bottom: 50px 0px;
+    padding: 50px 0px;
     background: #0A0826;
 }
 
@@ -412,10 +426,13 @@ Media qurey css
     .banner-content {
 
         align-items: center;
+
         flex-direction: column-reverse;
     }
 
     .banner-content .left {
+
+        flex-basis: 100%;
         padding: 14px 43px 52px 41px;
     }
 
@@ -434,13 +451,20 @@ Media qurey css
     }
 
     .banner-content .btn1 {
+
         padding: 10px 15px 10px;
-        text-align: center;
-        align-items: center;
-        margin: 25%;
+
+
+
     }
 
-    .banner .right {
+    .align-middle {
+        text-align: center;
+    }
+
+    .banner-content .right {
+        flex-basis: 100%;
+
         padding: 22px 52px 14px 51px;
     }
 
